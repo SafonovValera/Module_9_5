@@ -44,9 +44,9 @@ class Iterator():
     def __next__(self):
         if (self.step > 0 and self.pointer > self.stop) or (self.step < 0 and self.pointer < self.stop):
             raise StopIteration
-        s = self.pointer
+        a = self.pointer
         self.pointer += self.step
-        return s
+        return a
 
 # Пункты задачи:
 #
